@@ -1,0 +1,18 @@
+<h1>게시판</h1>
+
+<a href="/post/new">게시물작성하기</a>
+
+<% @posts.each do |p| %>
+	<p>내용 :<%= p.title %>
+	제목: <%= p.content %>
+	<p><a href="/post/show/<%= p.id %>">보기</a>
+		<a href="/post/edit/<%= p.id %>">수정</a>
+	<a href="/post/destroy/<%= p.id %>">삭제</a>
+	</p>
+
+	<hr>
+</p>
+<% end%>
+
+
+
