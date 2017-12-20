@@ -1,0 +1,9 @@
+<h1>회원가입</h1>
+<form action="/user/create" method="post">
+	이메일 입력 : <input type="text" name="email" ><br>
+	비밀번호입력 : <input type="password" name="password"><br>
+
+	<input type="submit" value="회원가입">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+</form>
